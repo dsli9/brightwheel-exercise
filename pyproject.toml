@@ -1,0 +1,24 @@
+[project]
+name = "brightwheel-exercise"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "polars>=1.9.0",
+    "yoyo-migrations>=9.0.0",
+    "sqlalchemy>=2.0.35",
+    "psycopg2-binary>=2.9.9",
+    "adbc-driver-manager>=1.2.0",
+    "adbc-driver-postgresql>=1.2.0",
+    "pyarrow>=17.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.3",
+]

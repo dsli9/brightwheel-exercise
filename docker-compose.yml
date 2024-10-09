@@ -1,0 +1,8 @@
+services:
+  brightwheel-dev-db:
+    image: postgres:14
+    container_name: brightwheel-dev-db
+    env_file:
+      - docker/db.env
+    ports:
+      - 52601:5432
