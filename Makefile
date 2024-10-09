@@ -4,7 +4,7 @@ initialize:
 	@uv sync
 
 .PHONY: run-exercise
-run_exercise:
+run-exercise:
 	@echo "Running ETL service for exercise"
 	@uv run python -m brightwheel_exercise ./data/source1.csv -v
 	@uv run python -m brightwheel_exercise ./data/source2.csv -v
